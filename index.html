@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-    
+
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -14,14 +14,35 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img class="splashLogo" src="img/logo.png">
+
+    <ons-navigator title="Navigator" var="myNavigator">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">MuzillaMP3</div>
+            </ons-toolbar>
+            <div style="text-align: center; margin-top: 30px;">
+                <p>
+                    <ons-input id="urlinput" modifier="underbar" placeholder="Enter Video Url" float></ons-input>
+                </p>
+                <div>
+                    <h2 class="videoTitle"></h2>
+                    <img class="videoThumbnail" height="200" width="200">
+                </div>
+                <p style="margin-top: 30px;">
+                    <ons-button class='convertButton' type='submit'>Convert</ons-button>
+                </p>
+            </div>
+
+        </ons-page>
+    </ons-navigator>
+
+    <div class="bottom-bar">
+        <div class="bottom-bar__line-height" style="text-align:center">Bottom Toolbar</div>
     </div>
-    <di class='enterBTN'>
-        <a href="#" class=" splashButton waves-effect waves-light btn">Enter</a>
-    </di>
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 
 </html>
