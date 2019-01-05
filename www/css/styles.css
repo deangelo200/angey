@@ -7,9 +7,28 @@
    Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
    in the config.xml file and will be added by the CLI when you build locally.
 
-   See https://github.com/apache/cordova-plugin-statusbar
+  fff See https://github.com/apache/cordova-plugin-statusbar
 */
 
 .statusbar-overlay {
     background: #000000;
+}
+
+.convertButton {
+    margin-top: 50px;
+}
+
+.downloadButton {
+    margin-top: 25px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hidden {
+    display: none;
 }

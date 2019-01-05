@@ -11,8 +11,13 @@
             success: function (response) {
                 title = response.title;
                 thumbnail = response.thumbnail;
-                $('.videoTitle').append(title);
+                $('.videoTitle').text(title);
                 $('.videoThumbnail').attr("src", thumbnail);
+                $('.videoTitle').css("display", 'block');
+                $('.videoThumbnail').css("display", 'block');
+                $('.downloadButton').css("display", 'block');
+
+
 
             }
         });
