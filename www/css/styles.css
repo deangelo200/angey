@@ -10,17 +10,82 @@
   fff See https://github.com/apache/cordova-plugin-statusbar
 */
 
+.picture-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../imgs/background2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.top-bottom-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .statusbar-overlay {
     background: #000000;
 }
 
+/*
 .convertButton {
-    margin-top: 50px;
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
+*/
+
 
 .downloadButton {
-    margin-top: 25px;
+    top: 70%;
+    left: 40%;
+    transform: translate(-40%, -70%);
+
 }
+
+.convertAnotherButton {
+
+    top: 70%;
+    left: 60%;
+    transform: translate(-60%, -70%);
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.convertButton {}
+
+.btn-full:visited,
+.btn-full:link {
+    position: absolute;
+    display: block;
+    padding: 10px 40px;
+    /*
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+*/
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+    transition: all 0.5 ease-out;
+}
+
+
+
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
 
 .center {
     display: block;
@@ -29,6 +94,43 @@
 
 }
 
+#urlinput {
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    text-align: center;
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 50%;
+    /*280px;*/
+    border: 1px solid #818181;
+    /*  -moz-border-radius: 1px;
+    -webkit-border-radius: 1px; */
+    padding: 5px;
+
+
+}
+
+.videoTitle {
+    text-align: center;
+}
+
+
+.videoThumbnail {
+    position: absolute;
+    margin-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
 .hidden {
     display: none;
 }
+*/

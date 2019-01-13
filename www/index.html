@@ -49,12 +49,12 @@
     </div>
 
     <!-- Views -->
-    <div class="views">
+    <div class="views picture-background">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar-->
-            <div class="navbar">
-                <div class="navbar-inner">
+            <div class="navbar  top-bottom-nav">
+                <div class="navbar-inner ">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
                     <div class="center sliding">MuzillaMP3 by Angelo</div>
                 </div>
@@ -62,19 +62,19 @@
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
+                <div data-page="index" class="page picture-background">
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
                             <div class="convertContent">
                                 <input class="center" id="urlinput" type="url" placeholder="Paste video URL" required validate>
-                                <button class="center convertButton col button button-fill ">Convert</button>
-                                <div>
-                                    <h2 class=" center videoTitle hidden"></h2>
-                                    <img class=" center videoThumbnail hidden" height="200" width="300">
-                                    <button class=" center col button button-fill hidden downloadButton">Download</button>
+                                <a href="#" class="center convertButton btn-full">Convert</a>
 
-                                </div>
+                                <h2 class=" center videoTitle hidden">Young Boy Yellow Rain</h2>
+                                <img class=" center videoThumbnail hidden" height="200" width="300">
+                                <a href="#" class=" btn-full hidden downloadButton">Download</a>
+                                <a href="#" class="  btn-full hidden convertAnotherButton">Convert Another</a>
+
                             </div>
 
                         </div>
@@ -82,11 +82,13 @@
                 </div>
             </div>
             <!-- Bottom Toolbar-->
-            <div class="toolbar">
+            <div class="toolbar top-bottom-nav">
                 <div class="toolbar-inner">
-                    <!-- Toolbar links -->
+
+
                 </div>
             </div>
+
         </div>
     </div>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
